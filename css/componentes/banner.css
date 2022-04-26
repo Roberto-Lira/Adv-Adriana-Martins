@@ -1,0 +1,231 @@
+.banner__desktop-galeria{
+    height: calc(100vh - 150px);
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.banner__desktop-foto{
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: animacao;
+    min-height: 650px;
+    object-fit: cover;
+    object-position: 0 -140px;
+    opacity: 0;
+    position: absolute;
+}
+
+/* para solucionar o problema somente se parar o efeito de zoom da imagem e se contentar com o posicionamento das fotos tiradas */
+
+/* #imgpos{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+} */
+
+.banner__desktop-foto:nth-child(1){
+    
+}
+
+.banner__desktop-foto:nth-child(2){
+    animation-delay: 5s;
+}
+.banner__desktop-foto:nth-child(3){
+    animation-delay: 10s;
+}
+
+@keyframes animacao{
+    
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+        
+    }
+}
+
+.banner__desktop-texto{
+    color: var(--branco-branco);
+    position: absolute;
+    text-align: center;
+    top: 15rem;
+}
+
+.banner__desktop-texto h1{
+    margin-bottom: .3em;
+    text-shadow: 1px 1px 2px black, 0 0 1em #333, 0 0 0.2em #333;
+}
+
+.banner__desktop-texto p{
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 0 0 1em #333, 0 0 0.2em #333;
+}
+
+.banner__desktop-boxShadow{
+    background-color: rgba(0, 0, 0, 0.35);
+    margin: 0 10em;
+    padding: 25px 25px 50px 25px;
+}
+
+.banner__desktop-botao{
+    animation-name: shakeX;
+    animation-delay: 3s;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza);
+    border-radius: 2px;
+    color: var(--preto);
+    cursor: pointer;
+    display: inline-block;
+    padding: 17px 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: -29px;
+    z-index: 9;
+}
+
+.banner__desktop-botao:hover{
+    background-color: var(--dourado);
+    color: var(--branco-branco);
+}
+
+/* MOBILE */
+
+.banner__mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .banner__desktop{
+        display: none;
+    }
+    .banner__mobile{
+        display: block;
+    }
+    .banner__mobile-imagem{
+        background-image: url(../../image/img2.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: calc(100vh - 151px);
+
+        max-height: 400px;
+        min-height: 350px;
+    }
+    .banner__mobile-texto{
+        color: var(--branco-branco);
+        position: absolute;
+        text-align: center;
+        top: 15rem;
+    }
+    .banner__mobile-boxShadow{
+        background-color: rgba(0, 0, 0, 0.35);
+        margin: 0 2em;
+        padding: 25px 25px 50px 25px;
+        position: relative;
+        top: -20px;
+    }
+    .banner__mobile-boxShadow h1{
+        margin-bottom: .3em;
+        text-shadow: 1px 1px 2px black, 0 0 1em #333, 0 0 0.2em #333;
+    }
+    .banner__mobile-boxShadow p{
+        font-size: 22px;
+        font-weight: 300;
+        text-shadow: 1px 1px 2px black, 0 0 1em #333, 0 0 0.2em #333;
+    }
+    .banner__mobile-boxShadow p:nth-child(3){
+        margin-top: .5em;
+    }
+    .banner__mobile-botao{
+        text-decoration: none;
+    }
+    .banner__mobile-botao button{
+        align-items: center;
+        background-color: var(--whatsapp);
+        border: 1px solid var(--cinza-cinza);
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px #333;
+        color: var(--branco-branco);
+        cursor: pointer;
+        display: flex;
+        padding: 15px 10px;
+        position: relative;
+        margin: 0 auto;
+        top: -45px;
+        z-index: 999;
+
+    }
+    .banner__mobile-botao i{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .banner__mobile-botao button:hover{
+        background-color: var(--dourado);
+        color: var(--branco-branco);
+        transition-duration: .1s;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .banner__mobile-boxShadow{
+        position: relative;
+        top: -40px;
+    }
+    .banner__mobile-botao button{
+        position: relative;
+        top: -65px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .banner__mobile-imagem{
+        background-image: url(../../image/img4.jpg);
+        background-position: top left;
+        background-size: cover;
+        height: 500px;
+
+        min-height: auto;
+        max-height: none;
+    }
+    .banner__mobile-boxShadow{
+        padding:  1rem .5rem 2.5rem .5rem;
+        position: relative;
+        margin: 0 .5rem;
+        top: 25px;
+    }
+    .banner__mobile-boxShadow h1{
+        font-size: 24px;
+        margin-bottom: .5em;
+    }
+    .banner__mobile-boxShadow p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.25em;
+    }
+    .banner__mobile-boxShadow p:nth-child(3){
+        margin-top: .5em;
+    }
+    .banner__mobile-botao{
+        position: relative;
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .banner__mobile-imagem{
+        min-height: calc(100vh - 151px);
+    }
+    .banner__mobile-boxShadow{
+        position: relative;
+        top: 10px
+    }
+    .banner__mobile-botao{
+        position: relative;
+        top: 55px;
+    }
+}

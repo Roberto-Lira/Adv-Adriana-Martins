@@ -1,0 +1,158 @@
+.contato{
+    align-items: center;
+    background-color: var(--branco-branco);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 2rem;
+}
+
+.contato__titulo{
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+
+.contato__mapa{
+    margin-bottom: 30px;
+}
+
+.contato__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.contato__contatos{
+    min-width: 320px;
+    text-align: center;
+}
+
+.contato__contatos-titulo{
+    margin-bottom: .75em;
+}
+
+.contato__contatos-botao button{
+    background-color: var(--dourado);
+    padding: 15px 11px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.contato__contatos-botao p{
+    color: var(--branco-branco);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contato__contatos-telefones p{
+    line-height: 1.5em;
+}
+
+.contato__contatos-redesSociais{
+    margin: 0.5rem 0;
+}
+
+.contato__contatos-redesSociais i{
+    font-size: 34px;
+    padding: 0 0.12em;
+}
+
+.contato__contatos-redesSociais a:nth-child(1){
+    color: var(--whatsapp);
+}
+
+.contato__contatos-redesSociais a:nth-child(2){
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-clip: text;
+    font-size: 34px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.contato__contatos-redesSociais a:nth-child(3){
+    color: var(--facebook);
+}
+
+.contato__endereco{
+    min-width: 320px;
+    text-align: center;
+}
+
+.contato__endereco-titulo{
+    margin-bottom: 0.75em;
+}
+
+.contato__endereco-botao button{
+    background-color: var(--dourado);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 1em;
+    padding: 15px 11px;
+}
+
+.contato__endereco-botao p{
+    color: var(--branco-branco);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contato__endereco-texto p{
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 1000px){
+    .contato__mapa iframe{
+        display: block;
+        width: calc(100vw - 4rem);
+    }
+}
+
+@media screen and (max-width: 750px){
+    .contato__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato__contatos{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contato{
+        padding: 30px 1rem;
+    }
+    .contato__mapa iframe{
+        height: 300px;
+    }
+    .contato__container p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .contato__mapa iframe{
+        width: calc(100vw - 2rem);
+    }
+    .contato__contatos{
+        min-width: 100%;
+    }
+    .contato__endereco{
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 290px){
+    .contato__mapa iframe{
+        height: 250px;
+    }
+    .contato__container > .contato__contatos > .contato__contatos-email p{
+        font-size: 14px;
+    }
+}

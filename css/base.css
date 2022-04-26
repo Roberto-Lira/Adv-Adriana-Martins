@@ -1,0 +1,44 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* FONTES UTILIZADAS: wght@0,100;0,300;0,400;0,700;1,300& */
+
+h1{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: thin;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.clear{
+    clear: both;
+}

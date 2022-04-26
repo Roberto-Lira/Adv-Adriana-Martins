@@ -1,0 +1,38 @@
+.sobre{
+    background-image: linear-gradient(72deg, var(--preto), var(--azul), var(--preto));
+    color: var(--branco-branco);
+    padding: 30px 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre__titulo{
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+
+.sobre__foto{
+    background-image: url(../../image/img5.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.sobre__texto{
+    width: 450px;
+    text-align: center;
+    margin-top: 1.25em;
+    line-height: 1.25em;
+}
+
+@media screen and (max-width: 480px){
+    .sobre{
+        padding: 30px 1rem;
+    }
+    .sobre__texto{
+        width: 100%;
+    }
+}
