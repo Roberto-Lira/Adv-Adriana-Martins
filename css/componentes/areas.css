@@ -31,6 +31,8 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 1em;
     padding: 1em;
 }
@@ -42,10 +44,6 @@
 .areas__box-titulo:before{
     content: "\2727";
     padding-right: 5px;
-}
-
-.areas__box-titulo p{
-    font-weight: 400;
 }
 
 .areas__box-descricao{
